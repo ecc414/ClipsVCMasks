@@ -1,26 +1,19 @@
 //
-//  ViewController.swift
+//  ClipsToBounds.swift
 //  ClipsToBoundsVSMasksToBounds
 //
 //  Created by 엄철찬 on 2022/03/06.
 //
 
-import UIKit
 import Foundation
+import UIKit
 
-class MasksToBounds: UIViewController {
+class MasksToBounds : UIViewController {
     
     let mainRectView : UIView = {
         let view = UIView()
         view.backgroundColor = .green
         view.frame = CGRect(x: 100, y: 300 , width: 200, height: 200)
-        return view
-    }()
-    
-    let subRectView : UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue
-        view.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         return view
     }()
     
@@ -36,42 +29,35 @@ class MasksToBounds: UIViewController {
     let label : UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20)
-        label.text = " ClipsToBounds is false"
+        label.text = " MasksToBounds is false"
         return label
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(moveToClipsToBounds))
-        
-        title = "ClipsToBounds"
-        
         view.addSubview(mainRectView)
-        mainRectView.addSubview(subRectView)
         view.addSubview(controlSwitch)
         view.addSubview(label)
+        title = "MasksToBounds"
+        mainRectView.layer.shadowOffset = .init(width: 10, height: 10)
+        mainRectView.layer.shadowOpacity = 0.7
+        
+        
         label.translatesAutoresizingMaskIntoConstraints = false
-        mainRectView.bounds.origin = CGPoint(x: 50, y: 50)
+
         label.bottomAnchor.constraint(equalTo: controlSwitch.topAnchor, constant: -20).isActive = true
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
-    @objc func moveToClipsToBounds(){
-        let VC = ClipsToBounds()
-        VC.view.backgroundColor = .systemBackground
-        self.navigationController?.pushViewController(VC, animated: true)
-    }
-    
     @objc func onClickSwitch(sender: UISwitch) {
         if sender.isOn {
-            mainRectView.clipsToBounds = true
-            label.text = " ClipsToBounds is true"
+            mainRectView.layer.masksToBounds = true
+            label.text = " MasksToBounds is true"
         } else {
-            mainRectView.clipsToBounds = false
-            label.text = " ClipsToBounds is false"
+            mainRectView.layer.masksToBounds = false
+            label.text = " MasksToBounds is false"
         }
     }
-}
+    
 
+}

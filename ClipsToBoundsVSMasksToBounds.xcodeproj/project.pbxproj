@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		3347A26327D4564300FD0BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347A26227D4564300FD0BF7 /* AppDelegate.swift */; };
 		3347A26527D4564300FD0BF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347A26427D4564300FD0BF7 /* SceneDelegate.swift */; };
-		3347A26727D4564300FD0BF7 /* MasksToBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347A26627D4564300FD0BF7 /* MasksToBounds.swift */; };
+		3347A26727D4564300FD0BF7 /* ClipsToBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347A26627D4564300FD0BF7 /* ClipsToBounds.swift */; };
 		3347A26D27D4564300FD0BF7 /* ClipsToBoundsVSMasksToBounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3347A26B27D4564300FD0BF7 /* ClipsToBoundsVSMasksToBounds.xcdatamodeld */; };
 		3347A26F27D4564300FD0BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3347A26E27D4564300FD0BF7 /* Assets.xcassets */; };
 		3347A27227D4564300FD0BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3347A27027D4564300FD0BF7 /* LaunchScreen.storyboard */; };
-		3347A27A27D4584000FD0BF7 /* ClipsToBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347A27927D4584000FD0BF7 /* ClipsToBounds.swift */; };
+		3347A27A27D4584000FD0BF7 /* MasksToBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347A27927D4584000FD0BF7 /* MasksToBounds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3347A25F27D4564300FD0BF7 /* ClipsToBoundsVSMasksToBounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipsToBoundsVSMasksToBounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3347A26227D4564300FD0BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3347A26427D4564300FD0BF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3347A26627D4564300FD0BF7 /* MasksToBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasksToBounds.swift; sourceTree = "<group>"; };
+		3347A26627D4564300FD0BF7 /* ClipsToBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsToBounds.swift; sourceTree = "<group>"; };
 		3347A26C27D4564300FD0BF7 /* ClipsToBoundsVSMasksToBounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClipsToBoundsVSMasksToBounds.xcdatamodel; sourceTree = "<group>"; };
 		3347A26E27D4564300FD0BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3347A27127D4564300FD0BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3347A27327D4564300FD0BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3347A27927D4584000FD0BF7 /* ClipsToBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsToBounds.swift; sourceTree = "<group>"; };
+		3347A27927D4584000FD0BF7 /* MasksToBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasksToBounds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				3347A26227D4564300FD0BF7 /* AppDelegate.swift */,
 				3347A26427D4564300FD0BF7 /* SceneDelegate.swift */,
-				3347A26627D4564300FD0BF7 /* MasksToBounds.swift */,
-				3347A27927D4584000FD0BF7 /* ClipsToBounds.swift */,
+				3347A26627D4564300FD0BF7 /* ClipsToBounds.swift */,
+				3347A27927D4584000FD0BF7 /* MasksToBounds.swift */,
 				3347A26E27D4564300FD0BF7 /* Assets.xcassets */,
 				3347A27027D4564300FD0BF7 /* LaunchScreen.storyboard */,
 				3347A27327D4564300FD0BF7 /* Info.plist */,
@@ -141,10 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3347A26D27D4564300FD0BF7 /* ClipsToBoundsVSMasksToBounds.xcdatamodeld in Sources */,
-				3347A26727D4564300FD0BF7 /* MasksToBounds.swift in Sources */,
+				3347A26727D4564300FD0BF7 /* ClipsToBounds.swift in Sources */,
 				3347A26327D4564300FD0BF7 /* AppDelegate.swift in Sources */,
 				3347A26527D4564300FD0BF7 /* SceneDelegate.swift in Sources */,
-				3347A27A27D4584000FD0BF7 /* ClipsToBounds.swift in Sources */,
+				3347A27A27D4584000FD0BF7 /* MasksToBounds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
